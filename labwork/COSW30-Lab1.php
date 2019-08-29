@@ -3,7 +3,7 @@
     <head>
             <title>My Name is Gaith</title>
             
-    </head>git 
+    </head>
     <body>
         <h1>Gaith Cattan</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui. Non odio euismod lacinia
