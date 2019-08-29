@@ -13,7 +13,7 @@
             pellentesque habitant. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Non tellus orci ac auctor augue. Diam vulputate ut pharetra sit amet aliquam id. In nisl nisi scelerisque eu.</p>
             
         <?php
-        echo 'a href="">This is My PHP paragraph</a>'
+        echo <p>This is a PHP paragraph</p>
         ?>
         
     </body>
