@@ -16,9 +16,7 @@
         <h1>Gaith Cattan</h1>
 
         <?php
-        echo <p>Lab1<br>
-        Gaith Cattan<br>
-        09-01-2019</p>;
+        print 'Lab1 --- Gith Cattan --- 09-01-2019';
         ?> 
       
           <p>Hello everyone. My name is Gaith Cattan.<br>
@@ -46,14 +44,7 @@
       <br><br><br><br>
       
         <?php
-        echo <p>This is my PHP paragraph</p>
-        <p><b>Links to two of my favorite websites: </b><br>
-          <p>-Where you can find anything and everything: </p><a href="http://www.google.com" target="_blank">Google</a>
-          <p>-Where I can find good novels: </p><a href="https://www.webnovel.com" target="_blank">Webnovel</a>
-          <br><br><br>
-          <p>I found the coding for this assignment simple and easy but the process of uploading and publishing give me some troubles, probably because I am working on AWS GitHub and Heroku for the first time and not used to work with them yet.</p>
-
-        </p>
+        echo "I found the coding for this assignment simple and easy but the process of uploading and publishing give me some troubles, probably because I am working on AWS GitHub and Heroku for the first time and not used to work with them yet.";
         ?> 
 
         
