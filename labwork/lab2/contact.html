@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html>
+    <head>
+         <meta charset="utf-8">
+         <title>Political Campaign Supporter Form</title>
+        <style>
+          body {background-color: grey;}  
+          h1 {text-align: center; font-size: 60px; margin-top: 40px;}
+          footer {font-size: 2em; color: black; text-align: center; margin-top: 38%;}
+        </style>
+            
+    </head>
+    <body>
+
+        <h1>Political Campaign Supporter Form</h1>
+        <p>Register Today</p>
+
+         <form action="process_contact.php" method="POST">
+
+             <lable for="name">Full Name: </lable>
+             <input type="text" id="name" name="name" required>
+             <br><br>
+             
+             <lable for="email">Email Address: </lable>
+             <input type="email" id="email" name="email" required>
+             <br><br>             
+
+             <lable for="gender">Gender: 
+                 <select name:"gender" value="" required>
+                     <option disabled selected value> -- Select an option -- </option>
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                     <option value="other">Other</option>
+                     <option value="not_to_say">Prefer Not to Say</option>                     
+                 </select>
+             </lable>
+             <br><br>
+             
+             <lable for="age_range">Age: 
+                 <select name:"age_range" required>
+                     <option disabled selected value> -- Select an option -- </option>                     
+                     <option value="21-29">Between 21-29</option>
+                     <option value="30-49">Between 30-49</option>
+                     <option value="50-69">Between 50-69</option>
+                     <option value="70-200">Over 70</option>                     
+                 </select>
+             </lable>
+             <br><br>
+
+             <lable for="interests">Interests: </lable><br>
+             <input type="checkbox" name="interests1" value="sport"> Sport<br>
+             <input type="checkbox" name="interests2" value="reading"> Reading<br>
+             <input type="checkbox" name="interests3" value="gaming"> Gaming<br>             
+             <input type="checkbox" name="interests4" value="programming"> Programming<br>
+             <input type="checkbox" name="interests5" value="dancing"> Dancing<br>
+             <input type="checkbox" name="interests6" value="other"> Other<br>             
+             <br><br>
+
+             <lable for="contribution_amount">Contribution Amount: </lable>
+             <input type="text" id="contribution_amount" name="contribution_amount" value="0">
+             <br><br>
+
+             <lable for="mailing_list">Sign up for our mailing list?: </lable>
+             <input type="checkbox" name="mailing_list" value="mailing_list" checked>
+             <br><br>
+
+             <lable for="comments">Comments: </lable><br><br>
+             <textarea rows="6" cols="50" name="comment">Enter your comment here...</textarea>
+             <br><br>       
+
+
+             <button>Submit!</button>
+
+
+         </form>
+        
+    </body>
+    
+    <footer>
+        <p>&copy; 2019 by Gaith Cattan</p>
+    </footer>
+
+</html>
