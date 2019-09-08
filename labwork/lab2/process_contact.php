@@ -14,9 +14,6 @@
     echo '<h2>Congratulation you have registered correctly.</h2>';
 
     }
-    else {
-        echo '<h2>Incomplete registration. Please try again.</h2>';
-    }
 
 
 ?>
