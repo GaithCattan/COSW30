@@ -2,10 +2,10 @@
 
 
 // validate if the fields are empty
-    if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['gender']) && !empty($_POST['age_range']) &&)
+    if(!empty($_POST['full_name']) && !empty($_POST['email']) && !empty($_POST['gender']) && !empty($_POST['age_range']))
     {
 
-   $name = $_POST['name'];
+   $full_name = $_POST['full_name'];
    $email = $_POST['email'];
    $gender = $_POST['gender'];
    $age_range = $_POST['age_range'];
@@ -17,7 +17,6 @@
     else {
         echo '<h2>Incomplete registration. Please try again.</h2>';
     }
-
 
 
 ?>
