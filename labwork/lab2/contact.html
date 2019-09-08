@@ -8,6 +8,7 @@
           body {background-color: grey;}  
           h1 {text-align: center; font-size: 60px; margin-top: 40px;}
           footer {font-size: 2em; color: black; text-align: center; margin-top: 38%;}
+          .needed {color: blue;}
         </style>
             
     </head>
@@ -15,15 +16,18 @@
 
         <h1>Political Campaign Supporter Form</h1>
         <p>Register Today</p>
+        <p><span class="needed">* required field</span></p>
 
          <form action="process_contact.php" method="POST">
 
              <lable for="full_name">Full Name: </lable>
              <input type="text" id="full_name" name="full_name" required>
+             <span class="needed">* </span>
              <br><br>
              
              <lable for="email">Email Address: </lable>
              <input type="email" id="email" name="email" required>
+             <span class="needed">* </span>
              <br><br>             
 
              <lable for="gender">Gender: 
@@ -35,6 +39,7 @@
                      <option value="not_to_say">Prefer Not to Say</option>                     
                  </select>
              </lable>
+             <span class="needed">* </span>
              <br><br>
              
              <lable for="age_range">Age: 
@@ -46,6 +51,7 @@
                      <option value="70-200">Over 70</option>                     
                  </select>
              </lable>
+             <span class="needed">* </span>
              <br><br>
 
              <lable for="interests">Interests: </lable><br>
