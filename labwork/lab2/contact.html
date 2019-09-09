@@ -31,7 +31,7 @@
              <br><br>             
 
              <lable for="gender">Gender: 
-                 <select name:"gender" value="" required>
+                 <select id="gender" name:"gender" value="" required>
                      <option disabled selected value> -- Select an option -- </option>
                      <option value="male">Male</option>
                      <option value="female">Female</option>
@@ -43,7 +43,7 @@
              <br><br>
              
              <lable for="age_range">Age: 
-                 <select name:"age_range" required>
+                 <select id="age_range" name:"age_range" required>
                      <option disabled selected value> -- Select an option -- </option>                     
                      <option value="21-29">Between 21-29</option>
                      <option value="30-49">Between 30-49</option>
@@ -55,12 +55,12 @@
              <br><br>
 
              <lable for="interests">Interests: </lable><br>
-             <input type="checkbox" name="interests1" value="sport"> Sport<br>
-             <input type="checkbox" name="interests2" value="reading"> Reading<br>
-             <input type="checkbox" name="interests3" value="gaming"> Gaming<br>             
-             <input type="checkbox" name="interests4" value="programming"> Programming<br>
-             <input type="checkbox" name="interests5" value="dancing"> Dancing<br>
-             <input type="checkbox" name="interests6" value="other"> Other<br>             
+             <input type="checkbox" name="interests[]" value"sport"> Sport<br>
+             <input type="checkbox" name="interests[]" value"reading"> Reading<br>
+             <input type="checkbox" name="interests[]" value"gaming"> Gaming<br>             
+             <input type="checkbox" name="interests[]" value"programming"> Programming<br>
+             <input type="checkbox" name="interests[]" value"dancing"> Dancing<br>
+             <input type="checkbox" name="interests[]" value"sailing"> Sailing<br>             
              <br><br>
 
              <lable for="contribution_amount">Contribution Amount: </lable>
@@ -72,7 +72,7 @@
              <br><br>
 
              <lable for="comments">Comments: </lable><br><br>
-             <textarea rows="6" cols="50" name="comment">Enter your comment here...</textarea>
+             <textarea rows="6" cols="50" name="comment"></textarea>
              <br><br>       
 
 
