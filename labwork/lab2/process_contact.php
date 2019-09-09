@@ -36,7 +36,8 @@
 
 /////////////////// print mailing list check box
 
-    if(isset($_POST['$mailing_list']))
+    if(isset($_POST['$mailing_list']) &&
+       $_POST['$mailing_list'] == 'Yes')
     { echo "Mailing List: Yes.";
         }
     else {
