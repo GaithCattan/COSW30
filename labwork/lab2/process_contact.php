@@ -56,6 +56,8 @@
             { echo($interests[$i] . " "); }
         }
 
+    echo "<br>";
+
 ///////////////////
 
     echo "Comment: $comment";
