@@ -3,7 +3,7 @@
 
 /////////////////// check if the required fields are empty
 
-    if(!empty($_POST['full_name']) && !empty($_POST['email']))
+    if(!empty($_POST['full_name']) && !empty($_POST['email']) && !empty($_POST['gender']) && !empty($_POST['age_range']))
     {
 
     echo '<h2>Congratulation you have registered correctly.</h2>';
@@ -23,46 +23,48 @@
 /////////////////// print the input
 
     echo "<h2>Your Input:</h2>";
-    echo "Full Name: $full_name";
-    echo "<br>";
-    echo "Email: $email";
-    echo "<br>";
-    echo "Gender: $gender";
-    echo "<br>";
-    echo "Age: $age_range";
-    echo "<br>";
-    echo "contribution: $contribution_amount";
-    echo "<br>";
+    echo "Full Name: <b>$full_name</b>";
+    echo "<br><br>";
+    echo "Email: <b>$email</b>";
+    echo "<br><br>";
+    echo "Gender: <b>$gender</b>";
+    echo "<br><br>";
+    echo "Age: <b>$age_range</b>";
+    echo "<br><br>";
+    echo "contribution: <b>$contribution_amount</b>";
+    echo "<br><br>";
 
 /////////////////// print mailing list check box
 
-    if(isset($_POST['$mailing_list']) &&
-       $_POST['$mailing_list'] == 'Yes')
-    { echo "Mailing List: Yes.";
+    if(isset($_POST['mailing_list']) &&
+       $_POST['mailing_list'] == 'on')
+    { echo "Mailing List: <b>Yes.</b>";
         }
     else {
-      echo "Mailing List: No.";
+      echo "Mailing List: <b>No.</b>";
         }   
-    echo "<br>";
-
+    echo "<br><br>";
 
 /// print the checkbox interests
 
     if(empty($interests))
-        { echo("You didn't select any interests."); }
+        { echo("<b>You didn't select any interests.</b>"); }
     else
         { $N = count($interests);
-        echo("You selected $N interest(s): ");
+        echo("You selected <b>$N</b> interest(s): ");
+        echo "<br>";
             for($i=0; $i < $N; $i++)
-            { echo($interests[$i] . " "); }
+            { echo("$i" + 1 . "-");
+              echo($interests[$i] . " ");
+              echo "<br>";}
         }
 
-    echo "<br>";
+    echo "<br><br>";
 
 ///////////////////
 
     echo "Comment: $comment";
-    echo "<br>";
+    echo "<br><br>";
 
 /////////////////// incomplete form message
 
