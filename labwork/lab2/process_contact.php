@@ -6,7 +6,7 @@
     if(!empty($_POST['full_name']) && !empty($_POST['email']) && !empty($_POST['gender']) && !empty($_POST['age_range']))
     {
 
-    echo '<h2>Congratulation you have registered correctly.</h2>';
+    echo '<h2>Congratulations! You’ve successfully registered.</h2>';
 
 
 /////////////////// assign values to the variables
@@ -31,7 +31,7 @@
     echo "<br><br>";
     echo "Age: <b>$age_range</b>";
     echo "<br><br>";
-    echo "contribution: <b>$contribution_amount</b>";
+    echo "Contribution: <b>$contribution_amount</b>";
     echo "<br><br>";
 
 /////////////////// print mailing list check box
@@ -51,7 +51,7 @@
         { echo("<b>You didn't select any interests.</b>"); }
     else
         { $N = count($interests);
-        echo("You selected <b>$N</b> interest(s): ");
+        echo("You have selected <b>$N</b> interest(s): ");
         echo "<br>";
             for($i=0; $i < $N; $i++)
             { echo("$i" + 1 . "-");
