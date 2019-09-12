@@ -31,7 +31,7 @@
     echo "<br><br>";
     echo "Age: <b>$age_range</b>";
     echo "<br><br>";
-    echo "Contribution: <b>$contribution_amount</b>";
+    echo "Contribution: <b>$ $contribution_amount</b>";
     echo "<br><br>";
 
 /////////////////// print mailing list check box
