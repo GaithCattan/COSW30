@@ -23,7 +23,7 @@ echo "College Services card: $$services_card";
 echo "<br>";
 echo "Parking Permit: $$parking_permit";
 echo "<br>";
-echo "Total College Balance Due: "
+echo "Total College Balance Due: $total_2";
 
 
 
