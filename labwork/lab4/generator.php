@@ -11,6 +11,7 @@
     
 //  $array = [ 1 => 'test', 'test'];
     
+    echo "<h1>String</h1>";
     
     foreach($textExplode as $key => $value) {
         echo "<p>$key Value: $value</p>";
@@ -23,6 +24,9 @@
     echo "<p>$textImplode</p>";
 
 
+/*
+
+    echo "<h1>Random Texts</h1>";
 
 
 
