@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html>
+    <head>
+         <meta charset="utf-8">
+         <title>Favorite Quote</title>
+        <style>
+          body {background-color: black;
+                background-position: center;
+                background-repeat: no-repeat;}
+          h1 {text-align: center; font-size: 30px; margin-top: 40px;
+              border-radius: 25px; margin-left: auto; margin-right: auto;
+              background-color: grey;}
+          #container {width: 900px;	margin-left: auto;	margin-right: auto;	padding-top: 50px;	padding-bottom: 150px; border-radius: 25px;	background-color: green;}
+          #texting {width: 500px; display: block; margin-left: auto; margin-right: auto;}
+          input[type=submit] {background-color: blue; border: none; border-radius: 10px;  color: white;  padding: 16px 32px;  text-decoration: none;  margin: 4px 2px;  cursor: pointer;}
+          header {margin: 0; color: black; background-color: black; padding: 0.5%; text-align: center; font-size: 3em;}
+          footer {font-size: 1.5em; color: white; text-align: center; margin-top: 9%;}
+        </style>
+            
+    </head>
+    <body>
+
+        <header>
+            <a href="https://0cd32b34e5164bbab8e00106b3cc302a.vfs.cloud9.us-east-1.amazonaws.com/labwork/lab5/population.php">Go To Population Page.</a>
+
+        
+        </header>
+
+        <div id="container">
+        <div id="texting">
+
+        <h1>Favorite Quote</h1>
+        <p>Please enter 5 or more words, separated by a space</p>
+
+        <form action="process_favoritequote.php" method="POST">
+
+            <input type="text" id="text" name="text" size="60" autofocus>
+            <br><br><br>
+
+            <input type="submit" name="submit" value="Submit"/>
+        
+
+        </form>
+
+
+        </div>
+        </div>
+
+
+    </body>
+    
+    <footer>
+        <p>&copy; 2019 by Gaith Cattan</p>
+    </footer>
+
+</html>

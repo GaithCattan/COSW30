@@ -24,7 +24,6 @@
     echo "<p>$textImplode</p>";
 
 
-/*
 
     echo "<h1>Random Texts</h1>";
 
