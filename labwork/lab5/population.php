@@ -94,7 +94,7 @@
 
     echo "<br><br><br>";
 
-    echo " <a href=\"https://0cd32b34e5164bbab8e00106b3cc302a.vfs.cloud9.us-east-1.amazonaws.com/labwork/lab5/favoritequote.html\"><button>Return To Previous Page</button></a>";
+    echo " <a href=\"https://cosw30gaith.herokuapp.com/labwork/lab5/favoritequote.html\"><button>Return To Previous Page</button></a>";
 
 
 
