@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <main>
         
 
-        <h1>Login Form</h1>
+        <h1>MAIN CONTENT LOGIN PAGE</h1>
 
         <form action="login.php" method="POST">
             <label for="email">Email</label>

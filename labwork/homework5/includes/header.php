@@ -16,43 +16,33 @@
             h2 {text-align: center; color: red; font-size: 2em; margin-top: 40px; border-radius: 25px; margin-left: auto; margin-right: auto; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
           #container {width: 900px;	margin-left: auto;	margin-right: auto;	padding-top: 50px;	padding-bottom: 150px; border-radius: 25px;}
           #texting {width: 500px; display: block; margin-left: auto; margin-right: auto;}
+          #red1 {color: red;}
           input[type=submit] {background-color: #00ffff; border: none; border-radius: 10px;  color: white;  padding: 16px 32px;  text-decoration: none;  margin: 4px 2px;  cursor: pointer;}
           header {margin: 0; color: black; padding: 0.5%; text-align: center; font-size: 1em;}
 
                 ul {
-                  list-style-type: none;
-                  margin: 0;
-                  padding: 0;
-                  width: 200px;
-                  background-color: #f1f1f1;
-                  border: 1px solid #555;
-                }
-                
-                li a {
-                  display: block;
-                  color: #000;
-                  padding: 8px 16px;
-                  text-decoration: none;
-                }
-                
-                li {
-                  text-align: center;
-                  border-bottom: 1px solid #555;
-                }
-                
-                li:last-child {
-                  border-bottom: none;
-                }
-                
-                li a.active {
-                  background-color: #00ffff;
-                  color: white;
-                }
-                
-                li a:hover:not(.active) {
-                  background-color: #555;
-                  color: white;
-                }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00ffff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+}
             </style>
          
     </head>

@@ -37,19 +37,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     {
  // validate the password with the confirm password
     if ($password == $confirm_password){
-        echo '<h1>Congratulation you have registered correctly.</h1>';
+        echo '<h3>Congratulation you have registered correctly.</h3>';
     }
     else {
-        echo '<h1>Password do not match. Please try again.</h1>';
+        echo '<h3>Password do not match. Please try again.</h3>';
     }
     }
     else {
-        echo "<h1>Please Enter Your Information</h1>";
+        echo "<h3>Please Enter Your Information</h3>";
     }
 ?>
 
     <main>
-        <h1>Registration Form</h1>
+        <h1>MAIN CONTENT REGISTER PAGE</h1>
 
         <form action="register.php" method="POST">
             <label for="first_name">First Name</label>
