@@ -8,7 +8,7 @@
          
             <style>
             
-            body {background-color: white; background-image: url("https://storage.needpix.com/rsynced_images/map-1254058_1280.jpg");
+            body {background-color: white; background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/3404344/600/400/m2/fpnw/wm0/map-.jpg?1507883238&s=28aaedae20f0ef97dacb9b273d7ed035");
                 background-position: center;
                 background-repeat: no-repeat;}
             
