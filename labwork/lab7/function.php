@@ -48,8 +48,11 @@
 $Color = "green";
 $fontsize = "60px";
 
- 
- $operator = $_POST['operator'];
+
+$value1 = $_POST['value1'];
+$value2 = $_POST['value2'];
+$operator = $_POST['operator'];
+
 
 switch($operator) {
   case "addition":
@@ -70,13 +73,6 @@ switch($operator) {
 
 
 
-/*
-
-text-align: center; font-size: 60px; margin-top: 40px;
-              border-radius: 25px; margin-left: auto; margin-right: auto;
-              background-color: white;
-   
-*/
  
  
  ?>
