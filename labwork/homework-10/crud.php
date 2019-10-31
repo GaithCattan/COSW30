@@ -22,7 +22,7 @@ $result = mysqli_query($connection, $query);
 
 // Check if the database returned anything
 if($result) {
-    $rows = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
     print_r($rows);
     // Output the results
 
