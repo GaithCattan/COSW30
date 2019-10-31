@@ -39,7 +39,7 @@ $result = mysqli_query($connection, $query);
 // Check if the database returned anything
 if($result) {
     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    print_r($rows);
+    //print_r($rows);
     // Output the results
 
 } else {
@@ -67,7 +67,7 @@ if($result) {
         <input type="email" id="email" name="email"><br>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password"><br>
+        <input type="text" id="password" name="password"><br>
 
         <!--Add a second password input so the user has to retype their password -->
 
