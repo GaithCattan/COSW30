@@ -22,7 +22,7 @@ $result = mysqli_query($connection, $query);
 
 // Check if the database returned anything
 if($result) {
-    $row = mysqli_fetch_array($result);
+    $rows = mysqli_fetch_array($result);
     // Output the results
 
 } else {
@@ -70,9 +70,9 @@ if($result) {
         <tbody>
 
         <?php
-        while($row) {
+        foreach($rows as $row) {
         echo '<tr>
-                <td></td>
+                <td>'.$row[1].'</td>
                 <td></td>
                 <td></td>
                 <td></td>
