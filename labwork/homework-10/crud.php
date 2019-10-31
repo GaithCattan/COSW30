@@ -22,7 +22,8 @@ $result = mysqli_query($connection, $query);
 
 // Check if the database returned anything
 if($result) {
-    $rows = mysqli_fetch_array($result);
+    $rows = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    print_r($rows);
     // Output the results
 
 } else {
@@ -72,10 +73,10 @@ if($result) {
         <?php
         foreach($rows as $row) {
         echo '<tr>
-                <td>'.$row[1].'</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>'.$row['first_name'].'</td>
+                <td>'.$row['last_name'].'</td>
+                <td>'.$row['email'].'</td>
+                <td>'.$row['password'].'</td>
             </tr>';
         }
         ?>
