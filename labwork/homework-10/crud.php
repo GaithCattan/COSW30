@@ -14,6 +14,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
                     VALUES ($first_name, $last_name, $email, $password)";
     $result = mysqli_query($connection, $insert_query);
+
+    if($result) {
+        echo 'New user added to the database';
+    } else {
+        echo 'Error entery';
+    }
+
 }
 
 
