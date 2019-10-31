@@ -22,6 +22,7 @@ if($result) {
     }
 } else {
     // Output an error
+    echo 'this is not working';
 }
 ?>
 
