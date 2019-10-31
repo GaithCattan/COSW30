@@ -13,9 +13,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
                     VALUES ($first_name, $last_name, $email, $password)";
-    $result = mysqli_query($connection, $insert_query);
+    $result1 = mysqli_query($connection, $insert_query);
 
-    if($result) {
+    if($result1) {
         echo 'New user added to the database';
     } else {
         echo 'Error entery';
@@ -67,7 +67,7 @@ if($result) {
         <input type="email" id="email" name="email"><br>
 
         <label for="password">Password</label>
-        <input type="text" id="password" name="password"><br>
+        <input type="password" id="password" name="password"><br>
 
         <!--Add a second password input so the user has to retype their password -->
 
