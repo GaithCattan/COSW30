@@ -11,15 +11,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 /*
 *   QUERY THE DATABASE AND STORE ALL USERS INTO A VARIABLE
 */
+
 // Create your query
 $query = 'SELECT * FROM USER_CATTAN';
+
+
 // Run your query
 $result = mysqli_query($connection, $query);
+
+
 // Check if the database returned anything
 if($result) {
-    while($row = mysqli_fetch_array($result)){
-        // Output the results
-    }
+    $row = mysqli_fetch_array($result);
+    // Output the results
+
 } else {
     // Output an error
     echo 'this is not working';
@@ -63,12 +68,18 @@ if($result) {
             </tr>
         </thead>
         <tbody>
-            <tr>
+
+        <?php
+        while($row) {
+        echo '<tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-            </tr>
+            </tr>';
+        }
+        ?>
+
         </tbody>
     </table>
 </body>
