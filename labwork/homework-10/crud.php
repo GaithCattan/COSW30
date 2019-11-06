@@ -5,11 +5,14 @@ include('database.php');
 *   CHECK IF THE FORM HAS BEEN SUBMITTED AND INSERT
 *   NEW USER INTO THE DATABASE
 */
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+
+if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
     $first_name = $_POST['first_name'];
     $last_name  = $_POST['last_name'];
     $email      = $_POST['email'];
     $password   = $_POST['password'];
+    $confirm_password = $_POST['confirm_password'];
 
     $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
                     VALUES ('$first_name', '$last_name', '$email', '$password')";
@@ -68,6 +71,9 @@ if($result) {
 
         <label for="password">Password</label>
         <input type="password" id="password" name="password"><br>
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password"><br>
 
         <!--Add a second password input so the user has to retype their password -->
 
