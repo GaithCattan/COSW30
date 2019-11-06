@@ -6,13 +6,13 @@ include('database.php');
 *   NEW USER INTO THE DATABASE
 */
 
+/*
 
-if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $first_name = $_POST['first_name'];
     $last_name  = $_POST['last_name'];
     $email      = $_POST['email'];
     $password   = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
 
     $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
                     VALUES ('$first_name', '$last_name', '$email', '$password')";
@@ -25,6 +25,57 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['first_name']) && !empt
     }
 
 }
+
+*/
+
+//////////////////////////////
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Procees our form and validate it
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // validate
+    if(empty($first_name)) {
+      echo  "Enter your first name please";
+      echo '<br>';
+    }
+    if(empty($last_name)) {
+      echo  "Enter your last name please";
+      echo '<br>';
+    }
+    if(empty($email)) {
+      echo  "Enter your email please";
+      echo '<br>';
+    }
+    if(empty($password)) {
+      echo  "Enter your password please";
+      echo '<br>';
+    }
+}
+
+    if(!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']))
+    {
+        $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
+                    VALUES ('$first_name', '$last_name', '$email', '$password')";
+        $result = mysqli_query($connection, $insert_query);
+
+        if($result) {
+            echo 'New user added to the database';
+        }
+         else {
+            echo 'Error entery';
+        }
+    }
+
+
+
+
+
+//////////////////////////////
+
 
 
 /*
@@ -71,11 +122,6 @@ if($result) {
 
         <label for="password">Password</label>
         <input type="password" id="password" name="password"><br>
-
-        <label for="confirm_password">Confirm Password</label>
-        <input type="password" id="confirm_password" name="confirm_password"><br>
-
-        <!--Add a second password input so the user has to retype their password -->
 
         <button>Register</button>
     </form>
