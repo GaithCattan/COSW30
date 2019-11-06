@@ -119,8 +119,6 @@ if($result) {
           #texting {width: 500px; display: block; margin-left: auto; margin-right: auto; text-align: center;}
           input[type=submit] {background-color: grey; border: none; border-radius: 10px;  color: white;  padding: 16px 32px;  text-decoration: none;  margin: 4px 2px;  cursor: pointer;}
           table, th, td {border: 1px solid black; text-align: center;}
-          th {color: grey;}
-          td {color: white;}
           footer {font-size: 1.5em; color: white; text-align: center; margin-top: 11%;}
         </style>
 </head>
@@ -168,10 +166,10 @@ if($result) {
         <?php
         foreach($rows as $row) {
         echo '<tr>
-                <td>'.$row['first_name'].'</td>
-                <td>'.$row['last_name'].'</td>
-                <td>'.$row['email'].'</td>
-                <td>'.$row['password'].'</td>
+                <td bgcolor="white">'.$row['first_name'].'</td>
+                <td bgcolor="white">'.$row['last_name'].'</td>
+                <td bgcolor="white">'.$row['email'].'</td>
+                <td bgcolor="white">'.$row['password'].'</td>
             </tr>';
         }
         ?>
