@@ -156,10 +156,10 @@ if($result) {
     <table>
         <thead>
             <tr>
-                <th bgcolor="#FF0000">First Name</th>
-                <th bgcolor="#FF0000">Last Name</th>
-                <th bgcolor="#FF0000">Email</th>
-                <th bgcolor="#FF0000">Password</th>
+                <th bgcolor="grey">First Name</th>
+                <th bgcolor="grey">Last Name</th>
+                <th bgcolor="grey">Email</th>
+                <th bgcolor="grey">Password</th>
             </tr>
         </thead>
         <tbody>
