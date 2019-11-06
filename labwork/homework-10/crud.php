@@ -140,10 +140,10 @@ if($result) {
         <label for="last_name"><b>Last Name: &nbsp&nbsp&nbsp</b></label>
         <input type="text" id="last_name" name="last_name" placeholder="" value="<?php echo $last_name ?>"><br><br>
 
-        <label for="email"><b>Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+        <label for="email"><b>Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
         <input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email ?>"><br><br>
 
-        <label for="password"><b>Password: &nbsp&nbsp&nbsp</b></label>
+        <label for="password"><b>Password: &nbsp&nbsp&nbsp&nbsp</b></label>
         <input type="password" id="password" name="password"><br><br>
 
         <button>Register</button>
@@ -152,7 +152,7 @@ if($result) {
 
 
 
-    <h2>Users</h2>
+    <h2>Users List</h2>
     <table>
         <thead>
             <tr>
