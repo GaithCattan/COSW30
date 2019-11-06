@@ -118,6 +118,7 @@ if($result) {
           #container {width: 900px;	margin-left: auto;	margin-right: auto;	padding-top: 50px;	padding-bottom: 150px; border-radius: 25px;	background-color: green;}
           #texting {width: 500px; display: block; margin-left: auto; margin-right: auto; text-align: center;}
           input[type=submit] {background-color: blue; border: none; border-radius: 10px;  color: white;  padding: 16px 32px;  text-decoration: none;  margin: 4px 2px;  cursor: pointer;}
+          table, th, td {border: 1px solid black; text-align: center;}
           footer {font-size: 1.5em; color: white; text-align: center; margin-top: 11%;}
         </style>
 </head>
@@ -134,16 +135,16 @@ if($result) {
 
     <form action="crud.php" method="POST">
         <label for="first_name"><b>First Name: &nbsp&nbsp&nbsp</b></label>
-        <input type="text" id="first_name" name="first_name" placeholder="" value="<?php echo $first_name ?>"><br>
+        <input type="text" id="first_name" name="first_name" placeholder="" value="<?php echo $first_name ?>"><br><br>
 
         <label for="last_name"><b>Last Name: &nbsp&nbsp&nbsp</b></label>
-        <input type="text" id="last_name" name="last_name" placeholder="" value="<?php echo $last_name ?>"><br>
+        <input type="text" id="last_name" name="last_name" placeholder="" value="<?php echo $last_name ?>"><br><br>
 
-        <label for="email"><b>Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
-        <input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email ?>"><br>
+        <label for="email"><b>Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email ?>"><br><br>
 
         <label for="password"><b>Password: &nbsp&nbsp&nbsp</b></label>
-        <input type="password" id="password" name="password"><br>
+        <input type="password" id="password" name="password"><br><br>
 
         <button>Register</button>
     </form>
@@ -151,7 +152,7 @@ if($result) {
 
 
 
-    <h2>Output a List of The Users</h2>
+    <h2>Users</h2>
     <table>
         <thead>
             <tr>
@@ -176,6 +177,9 @@ if($result) {
 
         </tbody>
     </table>
+
+
+
 
     </div>
     </div>
