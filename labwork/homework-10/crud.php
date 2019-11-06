@@ -152,7 +152,7 @@ if($result) {
 
 
     <h2>Users List</h2>
-    <table>
+    <table style="text-align:center;">
         <thead>
             <tr>
                 <th bgcolor="grey">First Name</th>
