@@ -112,16 +112,16 @@ if($result) {
     <h1>Create a New User</h1>
     <form action="crud.php" method="POST">
         <label for="first_name">First Name</label>
-        <input type="text" id="first_name" name="first_name"><br>
+        <input type="text" id="first_name" name="first_name" placeholder="" value="<?php echo $first_name ?>"><br>
 
         <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" name="last_name"><br>
+        <input type="text" id="last_name" name="last_name" placeholder="" value="<?php echo $last_name ?>"><br>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email ?>"><br>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password"><br>
+        <input type="password" id="password" name="password" placeholder="" value="<?php echo $password ?>"><br>
 
         <button>Register</button>
     </form>
