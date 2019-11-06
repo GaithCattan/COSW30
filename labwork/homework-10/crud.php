@@ -61,7 +61,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-    if(!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']) && ($password == $confirm_password))
+    if ($password == $confirm_password){
+
+    if(!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']))
     {
         $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
                     VALUES ('$first_name', '$last_name', '$email', '$password')";
@@ -74,7 +76,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo 'Error entery';
         }
     }
-
+    else {
+        echo '<h2>Password do not match. Please try again.</h2>';
+    }
+    }
 
 
 
