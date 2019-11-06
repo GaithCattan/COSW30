@@ -150,7 +150,6 @@ if($result) {
     </form>
 
 
-    <div id="texting">
 
     <h2>Users List</h2>
     <table>
@@ -179,7 +178,6 @@ if($result) {
     </table>
 
 
-    </div>
     </div>
     </body>
 
