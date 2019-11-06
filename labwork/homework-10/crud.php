@@ -121,7 +121,7 @@ if($result) {
         <input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email ?>"><br>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="" value="<?php echo $password ?>"><br>
+        <input type="password" id="password" name="password"><br>
 
         <button>Register</button>
     </form>
