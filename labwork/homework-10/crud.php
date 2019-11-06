@@ -12,10 +12,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password   = $_POST['password'];
 
     $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
-                    VALUES ($first_name, $last_name, $email, $password)";
-    $result1 = mysqli_query($connection, $insert_query);
+                    VALUES ('$first_name', '$last_name', '$email', '$password')";
+    $result = mysqli_query($connection, $insert_query);
 
-    if($result1) {
+    if($result) {
         echo 'New user added to the database';
     } else {
         echo 'Error entery';
@@ -74,7 +74,10 @@ if($result) {
         <button>Register</button>
     </form>
 
-    <h2>Output a List of Users</h2>
+
+
+
+    <h2>Output a List of The Users</h2>
     <table>
         <thead>
             <tr>
