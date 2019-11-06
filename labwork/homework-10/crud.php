@@ -115,7 +115,7 @@ if($result) {
           h1 {text-align: center; font-size: 30px; margin-top: 40px;
               border-radius: 25px; margin-left: 20%; margin-right: 20%;
               background-color: grey;}
-          #container {width: 900px;	margin-left: auto;	margin-right: auto;	padding-top: 50px;	padding-bottom: 150px; border-radius: 25px;	background-color: #00EBCC; text-align:center;}
+          #container {width: 900px;	margin-left: auto;	margin-right: auto;	padding-top: 50px;	padding-bottom: 150px; border-radius: 25px;	background-color: #00EBCC;}
           #texting {width: 500px; display: block; margin-left: auto; margin-right: auto; text-align: center;}
           input[type=submit] {background-color: grey; border: none; border-radius: 10px;  color: white;  padding: 16px 32px;  text-decoration: none;  margin: 4px 2px;  cursor: pointer;}
           table, th, td {border: 1px solid black; text-align: center;}
@@ -149,7 +149,8 @@ if($result) {
         <input type="submit" name="submit" value="Submit"/>
     </form>
 
-
+    </div>
+    </div>
 
 
     <h2>Users List</h2>
@@ -179,8 +180,7 @@ if($result) {
     </table>
 
 
-    </div>
-    </div>
+
     </body>
 
     <footer>
