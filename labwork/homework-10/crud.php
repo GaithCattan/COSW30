@@ -131,7 +131,7 @@ if($result) {
 
     <h1>Create a New User</h1>
 
-
+    <div id="texting">
 
     <form action="crud.php" method="POST">
         <label for="first_name"><b>First Name: &nbsp&nbsp&nbsp</b></label>
@@ -151,8 +151,9 @@ if($result) {
 
 
 
+
     <h2>Users List</h2>
-    <table style="text-align:center;">
+    <table>
         <thead>
             <tr>
                 <th bgcolor="grey">First Name</th>
@@ -178,6 +179,7 @@ if($result) {
     </table>
 
 
+    </div>
     </div>
     </body>
 
