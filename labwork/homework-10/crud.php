@@ -109,11 +109,11 @@ if($result) {
         <meta charset="utf-8">
         <title>My First CRUD</title>
         <style>
-          body {background-color: black;
+          body {background-color: white;
                 background-position: center;
                 background-repeat: no-repeat;}
           h1 {text-align: center; font-size: 30px; margin-top: 40px;
-              border-radius: 25px; margin-left: auto; margin-right: auto;
+              border-radius: 25px; margin-left: 20%; margin-right: 20%;
               background-color: grey;}
           #container {width: 900px;	margin-left: auto;	margin-right: auto;	padding-top: 50px;	padding-bottom: 150px; border-radius: 25px;	background-color: green;}
           #texting {width: 500px; display: block; margin-left: auto; margin-right: auto; text-align: center;}
@@ -177,8 +177,6 @@ if($result) {
 
         </tbody>
     </table>
-
-
 
 
     </div>
