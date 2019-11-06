@@ -36,7 +36,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $last_name = $_POST['last_name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
 
     // validate
     if(empty($first_name)) {
@@ -55,17 +54,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       echo  "Enter your password please";
       echo '<br>';
     }
-    if(empty($confirm_password)) {
-      echo  "Confirm your password please";
-      echo '<br>';
-    }
-    if($password != $confirm_password) {
-      echo  "Password do not match. Please try again.";
-      echo '<br>';
-    }
 }
 
-    if(!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password']))
+    if(!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']))
     {
         $insert_query = "INSERT INTO USER_CATTAN (first_name, last_name, email, password)
                     VALUES ('$first_name', '$last_name', '$email', '$password')";
@@ -77,7 +68,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
          else {
             echo 'Error entery';
         }
-
     }
 
 
@@ -155,9 +145,6 @@ if($result) {
 
         <label for="password"><b>Password: &nbsp&nbsp&nbsp&nbsp</b></label>
         <input type="password" id="password" name="password"><br><br>
-
-        <label for="confirm_password"><b>Confirm Password: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
-        <input type="password" id="confirm_password" name="confirm_password"><br><br>
 
         <input type="submit" name="submit" value="Submit"/>
     </form>
