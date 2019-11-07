@@ -74,7 +74,7 @@ if($result) {
         <input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email ?>"><br><br>
 
         <label for="password"><b>Password: &nbsp&nbsp&nbsp&nbsp</b></label>
-        <input type="text" id="password" name="password"><br><br>
+        <input type="text" id="password" name="password" value="<?php echo $password ?>"><br><br>
 
         <button>Update User</button>
     </form>
