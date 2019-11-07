@@ -43,12 +43,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                          last_name = '$last_name',
                          email = '$email',
                          password = '$password'
-                    WHERE user_id = $id";
+                     WHERE user_id = $id";
 
     // Check if the database returned anything
+    $update_result = mysqli_query($connection, $update_query);
         // If the UPDATE query was successful, redirect to
         // the crud.php page
         // Else, output an error message
+    if($update_result) {
+        header('Location: crud.php');
+    } else {
+    echo 'No update happen';
+}
+
+
 }
 /*
 *   QUERY THE DATABASE FOR THE USER THAT HAS THE GET ID
