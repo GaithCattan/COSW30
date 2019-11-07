@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                      SET first_name = '$first_name',
                          last_name = '$last_name',
                          email = '$email',
-                         password = '$password',
+                         password = '$password'
                     WHERE user_id = $id";
 
     // Check if the database returned anything
