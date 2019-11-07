@@ -26,18 +26,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Validate the inputs (check if they're empty)
 
-//    $errors = [];
+
+
+
+
+/*    $errors = [];
 //    if(failed condition) {
 //        $error[] = 'Error message';
 //    }
-//    if(empty($error)) {}
+    if(empty($error)) {}
+*/
 
     // If they aren't empty, create and run your query
     $update_query = "UPDATE USER_CATTAN
                      SET first_name = '$first_name',
                          last_name = '$last_name',
                          email = '$email',
-                         password = '$password'
+                         password = '$password',
                     WHERE user_id = $id";
 
     // Check if the database returned anything
