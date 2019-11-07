@@ -159,6 +159,7 @@ if($result) {
                 <th bgcolor="grey">Last Name</th>
                 <th bgcolor="grey">Email</th>
                 <th bgcolor="grey">Password</th>
+                <th bgcolor="grey">Edit</th>
             </tr>
         </thead>
         <tbody>
@@ -170,6 +171,7 @@ if($result) {
                 <td bgcolor="white">'.$row['last_name'].'</td>
                 <td bgcolor="white">'.$row['email'].'</td>
                 <td bgcolor="white">'.$row['password'].'</td>
+                <td bgcolor="white"><a href="update.php?id='.$row['user_id'].'">Edit</td>
             </tr>';
         }
         ?>
