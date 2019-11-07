@@ -26,8 +26,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Validate the inputs (check if they're empty)
 
+//    $errors = [];
+//    if(failed condition) {
+//        $error[] = 'Error message';
+//    }
+//    if(empty($error)) {}
+
     // If they aren't empty, create and run your query
-    $update_query = "";
+    $update_query = "UPDATE USER_CATTAN
+                     SET first_name = '$first_name',
+                         last_name = '$last_name',
+                         email = '$email',
+                         password = '$password'
+                    WHERE user_id = $id";
 
     // Check if the database returned anything
         // If the UPDATE query was successful, redirect to
@@ -76,7 +87,7 @@ if($result) {
         <label for="password"><b>Password: &nbsp&nbsp&nbsp&nbsp</b></label>
         <input type="text" id="password" name="password" value="<?php echo $password ?>"><br><br>
 
-        <input type="hidden" name="user_id" value="<?php echo $id ?>">
+       <!-- <input type="hidden" name="user_id" value="<?php echo $id ?>">   -->
 
         <button>Update User</button>
     </form>
