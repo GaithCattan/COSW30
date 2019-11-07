@@ -4,11 +4,16 @@ include('database.php');
 /*
 *   CHECK IF THE URL HAS A $_GET VARIABLE CALLED ID
 */
+// homework/update.php?id=3
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
 } else {
     // redirect to crud.php
+    header('Location: crud.php');
+    exit;
 }
+
+
 /*
 *   AFTER SUBMITTING THE UPDATE FORM, UPDATE THE INFO
 *   IN THE DATABASE
