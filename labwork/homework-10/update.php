@@ -63,7 +63,7 @@ if($result) {
 </head>
 <body>
     <h1>Update User</h1>
-    <form action="update.php?" method="POST">
+    <form action="update.php?id=<?php echo $id ?>" method="POST">
         <label for="first_name"><b>First Name: &nbsp&nbsp&nbsp</b></label>
         <input type="text" id="first_name" name="first_name" value="<?php echo $first_name ?>"><br><br>
 
@@ -75,6 +75,8 @@ if($result) {
 
         <label for="password"><b>Password: &nbsp&nbsp&nbsp&nbsp</b></label>
         <input type="text" id="password" name="password" value="<?php echo $password ?>"><br><br>
+
+        <input type="hidden" name="user_id" value="<?php echo $id ?>">
 
         <button>Update User</button>
     </form>
