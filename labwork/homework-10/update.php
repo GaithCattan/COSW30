@@ -68,7 +68,7 @@ if($result) {
     $email      = $user['email'];
     $password   = $user['password'];
 } else {
-    // Output an error message
+    echo 'This id does not exist';
 }
 ?>
 
