@@ -23,9 +23,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $last_name  = $_POST['last_name'];
     $email      = $_POST['email'];
     $password   = $_POST['password'];
+
     // Validate the inputs (check if they're empty)
+
     // If they aren't empty, create and run your query
     $update_query = "";
+
     // Check if the database returned anything
         // If the UPDATE query was successful, redirect to
         // the crud.php page
@@ -35,7 +38,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 *   QUERY THE DATABASE FOR THE USER THAT HAS THE GET ID
 */
 // Create your query
-$query = "SELECT * FROM USER WHERE user_id = $id";
+$query = "SELECT * FROM USER_CATTAN WHERE user_id = $id";
+
 // Run your query
 $result = mysqli_query($connection, $query);
 // Check if the database returned anything
