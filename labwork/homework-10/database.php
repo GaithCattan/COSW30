@@ -6,5 +6,9 @@ $password = getenv('DB_PW_CLASS');
 $dbname = getenv('DB_NAME_DB');
 
 $connection = mysqli_connect($hostname , $username , $password , $dbname);
-
+print_r($connection);
+echo $hostname;
+echo $username;
+echo $password;
+echo $dbname;
 ?>
