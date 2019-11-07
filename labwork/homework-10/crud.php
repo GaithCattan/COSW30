@@ -171,7 +171,7 @@ if($result) {
                 <td bgcolor="white">'.$row['last_name'].'</td>
                 <td bgcolor="white">'.$row['email'].'</td>
                 <td bgcolor="white">'.$row['password'].'</td>
-                <td bgcolor="white"><a href="update.php?id='.$row['user_id'].'">Edit</td>
+                <td bgcolor="white"><a href="update.php?id='.$row['user_id'].'">Go To The Update Form</td>
             </tr>';
         }
         ?>
