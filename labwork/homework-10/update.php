@@ -47,6 +47,10 @@ if($result) {
     // If the database query was successful, store
     // the users information into a variable
     $user = mysqli_fetch_assoc($result);
+    $first_name = $user['first_name'];
+    $last_name  = $user['last_name'];
+    $email      = $user['email'];
+    $password   = $user['password'];
 } else {
     // Output an error message
 }
@@ -60,17 +64,17 @@ if($result) {
 <body>
     <h1>Update User</h1>
     <form action="update.php?" method="POST">
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name" name="first_name"><br>
+        <label for="first_name"><b>First Name: &nbsp&nbsp&nbsp</b></label>
+        <input type="text" id="first_name" name="first_name" value="<?php echo $first_name ?>"><br><br>
 
-        <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" name="last_name"><br>
+        <label for="last_name"><b>Last Name: &nbsp&nbsp&nbsp</b></label>
+        <input type="text" id="last_name" name="last_name" value="<?php echo $last_name ?>"><br><br>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email"><br>
+        <label for="email"><b>Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email ?>"><br><br>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"><br>
+        <label for="password"><b>Password: &nbsp&nbsp&nbsp&nbsp</b></label>
+        <input type="password" id="password" name="password"><br><br>
 
         <button>Update User</button>
     </form>
