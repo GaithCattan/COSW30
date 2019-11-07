@@ -19,10 +19,10 @@ if(isset($_GET['id'])) {
 *   IN THE DATABASE
 */
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $first_name = $_POST['first_name'];
-    $last_name  = $_POST['last_name'];
-    $email      = $_POST['email'];
-    $password   = $_POST['password'];
+    $first_name1 = $_POST['first_name'];
+    $last_name1  = $_POST['last_name'];
+    $email1      = $_POST['email'];
+    $password1   = $_POST['password'];
 
     // Validate the inputs (check if they're empty)
 
@@ -39,10 +39,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // If they aren't empty, create and run your query
     $update_query = "UPDATE USER_CATTAN
-                     SET first_name = '$first_name',
-                         last_name = '$last_name',
-                         email = '$email',
-                         password = '$password'
+                     SET first_name = '$first_name1',
+                         last_name = '$last_name1',
+                         email = '$email1',
+                         password = '$password1'
                     WHERE user_id = $id";
 
     // Check if the database returned anything
