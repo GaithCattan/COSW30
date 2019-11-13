@@ -25,8 +25,22 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password   = $_POST['password'];
 
     // Validate the inputs (check if they're empty)
-
-
+    if(empty($first_name)) {
+      echo  "Enter new first name please";
+      echo '<br>';
+    }
+    if(empty($last_name)) {
+      echo  "Enter new last name please";
+      echo '<br>';
+    }
+    if(empty($email)) {
+      echo  "Enter new email please";
+      echo '<br>';
+    }
+    if(empty($password)) {
+      echo  "Enter new password please";
+      echo '<br>';
+    }
 
 
 
@@ -36,6 +50,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 //    }
     if(empty($error)) {}
 */
+
+if(!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']))
+    {
+
 
     // If they aren't empty, create and run your query
     $update_query = "UPDATE USER_CATTAN
@@ -56,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo 'No update happen';
 }
 
-
+    }
 }
 /*
 *   QUERY THE DATABASE FOR THE USER THAT HAS THE GET ID
@@ -102,7 +120,7 @@ if($result) {
 
        <!-- <input type="hidden" name="user_id" value="<?php echo $id ?>">   -->
 
-        <button>Update User</button>
+        <button>Update Information</button>
     </form>
 </body>
 </html>
