@@ -170,6 +170,7 @@ if($result) {
                 <th bgcolor="grey">Email</th>
                 <th bgcolor="grey">Password</th>
                 <th bgcolor="grey">Edit</th>
+                <th bgcolor="grey">Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -182,7 +183,7 @@ if($result) {
                 <td bgcolor="white">'.$row['email'].'</td>
                 <td bgcolor="white">'.$row['password'].'</td>
                 <td bgcolor="white"><a href="update.php?id='.$row['user_id'].'">Go To The Update Form</td>
-                <td bgcolor="white"><a href="delete.php?id='.$row['user_id'].'">Delete</td>
+                <td bgcolor="white"><a href="delete.php?id='.$row['user_id'].'">Delete User</td>
             </tr>';
         }
         ?>
