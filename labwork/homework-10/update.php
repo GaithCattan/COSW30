@@ -142,7 +142,7 @@ if($result) {
 
        <!-- <input type="hidden" name="user_id" value="<?php echo $id ?>">   -->
 
-        <button>Update Information And Go TO Main Page</button>
+        <button>Update Information And Go To The Main Page</button>
     </form>
 
     </div>
