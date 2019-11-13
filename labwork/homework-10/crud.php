@@ -182,6 +182,7 @@ if($result) {
                 <td bgcolor="white">'.$row['email'].'</td>
                 <td bgcolor="white">'.$row['password'].'</td>
                 <td bgcolor="white"><a href="update.php?id='.$row['user_id'].'">Go To The Update Form</td>
+                <td bgcolor="white"><a href="delete.php?id='.$row['user_id'].'">Delete</td>
             </tr>';
         }
         ?>
