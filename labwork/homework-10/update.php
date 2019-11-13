@@ -101,10 +101,32 @@ if($result) {
 <!doctype html>
 <html>
 <head>
-    <title>My First CRUD</title>
+        <meta charset="utf-8">
+        <title>My Update Page</title>
+        <style>
+          body {background-color: blue;
+                background-position: center;
+                background-repeat: no-repeat;}
+          h1 {text-align: center; font-size: 30px; margin-top: 40px;
+              border-radius: 25px; margin-left: 20%; margin-right: 20%;
+              background-color: grey;}
+          #container {width: 900px;	margin-left: auto;	margin-right: auto;	padding-top: 50px;	padding-bottom: 150px; border-radius: 25px;	background-color: #00EBCC;}
+          #texting {width: 500px; display: block; margin-left: auto; margin-right: auto; text-align: center;}
+          input[type=submit] {background-color: grey; border: none; border-radius: 10px;  color: white;  padding: 16px 32px;  text-decoration: none;  margin: 4px 2px;  cursor: pointer;}
+          table, th, td {border: 1px solid black; text-align: center; margin-left: 10%;}
+          footer {font-size: 1.5em; color: white; text-align: center; margin-top: 11%;}
+        </style>
 </head>
+
 <body>
+
+    <div id="container">
+
     <h1>Update User</h1>
+
+    <div id="texting">
+
+
     <form action="update.php?id=<?php echo $id ?>" method="POST">
         <label for="first_name"><b>First Name: &nbsp&nbsp&nbsp</b></label>
         <input type="text" id="first_name" name="first_name" value="<?php echo $first_name ?>"><br><br>
@@ -120,7 +142,15 @@ if($result) {
 
        <!-- <input type="hidden" name="user_id" value="<?php echo $id ?>">   -->
 
-        <button>Update Information</button>
+        <button>Update Information And Go TO Main Page</button>
     </form>
-</body>
+
+    </div>
+    </div>
+    </body>
+
+    <footer>
+        <p>&copy; 2019 by Gaith Cattan</p>
+    </footer>
+
 </html>
