@@ -3,13 +3,22 @@ include('includes/header.php');
 include('includes/database.php');
 // Check if the user is already logged in
 // If they are, redirect to welcome.php
+
+
+
+
+
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Grab values from the form inputs
     $email = $_POST['email'];
     $password = $_POST['password'];
     // Validate the form data
     // Check if the user's email and password are in the database
-    $query = "";
+    $query = "SELECT user_id, first_name
+            FROM USER_CATTAN
+            WHERE email = '$email'
+            AND password = '$password'";
+            
     $result = mysqli_query($connection, $query);
     // If they are, log them in
     if($result) {
