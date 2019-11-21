@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-
 if(isset($_SESSION['user_id'])) {
     header('Location: welcome.php');
     exit;
 }
+
 
 // Check if the user is already logged in
 // If they are, redirect to welcome.php
