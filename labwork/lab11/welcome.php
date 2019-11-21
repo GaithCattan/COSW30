@@ -13,6 +13,28 @@ if(!isset($_SESSION['user_id'])) {
 include('includes/header.php');
 include('includes/database.php');
 
+///////////////////////////////////////////
+
+$query = 'SELECT * FROM USER_CATTAN';
+
+
+// Run your query
+$result = mysqli_query($connection, $query);
+
+
+// Check if the database returned anything
+if($result) {
+    $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    //print_r($rows);
+    // Output the results
+
+} else {
+    // Output an error
+    echo 'this is not working';
+}
+
+///////////////////////////////////////////
+
 ?>
 
 <main class="container">
@@ -31,14 +53,19 @@ include('includes/database.php');
         </thead>
         <tbody>
             <!-- Loop through and output all users -->
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <?php
+        foreach($rows as $row) {
+        echo '<tr>
+                <td>'.$row['first_name'].'</td>
+                <td>'.$row['last_name'].'</td>
+                <td>'.$row['email'].'</td>
+            </tr>';
+        }
+        ?>
         </tbody>
     </table>
 
 </main>
 
 <?php include('includes/footer.php'); ?>
+
