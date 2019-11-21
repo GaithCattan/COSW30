@@ -21,6 +21,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 AND password = '$password'";
 
     $result = mysqli_query($connection, $query);
+    echo($query);
+    echo($result);
     // If they are, log them in
     if($result) {
         $user = mysqli_fetch_assoc($result);
