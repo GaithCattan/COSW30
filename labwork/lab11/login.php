@@ -1,9 +1,18 @@
 <?php
 session_start();
-include('includes/header.php');
-include('includes/database.php');
+
+
+if(isset($_SESSION['user_id'])) {
+    header('Location: welcome.php');
+    exit;
+}
+
 // Check if the user is already logged in
 // If they are, redirect to welcome.php
+
+include('includes/header.php');
+include('includes/database.php');
+
 
 
 
