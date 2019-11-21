@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $result = mysqli_query($connection, $query);
     echo($query);
-    echo($result);
+    print_r($result);
     // If they are, log them in
     if($result) {
         $user = mysqli_fetch_assoc($result);
@@ -43,7 +43,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         print_r($user);
         print_r($_SESSION);
         // Redirect to the welcome.php page
-
+        header('Location: welcome.php');
+        exit;
 
     // If they aren't, show the log in form with an error
     } else { 
