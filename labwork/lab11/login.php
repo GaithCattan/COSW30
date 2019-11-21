@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // If they are, log them in
     if($result) {
         $user = mysqli_fetch_assoc($result);
-        
+
         // Add their user id to the $_SESSION
         $_SESSION['user_id'] = $user['user_id'];
         $_SESSION['first_name'] = $user['first_name'];
