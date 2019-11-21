@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
     </div>
 </div>
-
+<?php print_r ($_SESSION);  ?>
 </main>
 
 <?php include('includes/footer.php'); ?>
